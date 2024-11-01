@@ -47,3 +47,9 @@ makeoldpath() {
         gzip "$newfile"
     done
 }
+
+# Force grep to always use color
+alias grep='grep --color=always'
+
+# Make less interpret colors by default
+alias less='less -R'
