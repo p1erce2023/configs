@@ -19,6 +19,11 @@ makeoldpath() {
         return 1
     fi
 
+    if [[ -z "$(ls -A "$dir")" ]]; then
+        echo "Directory $dir is empty. Exiting."
+        return 0
+    fi
+
     # Set nice level to -9 for the whole process
     renice -n 9 $$ > /dev/null
 
