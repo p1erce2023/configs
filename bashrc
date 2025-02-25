@@ -58,3 +58,9 @@ alias grep='grep --color=always'
 
 # Make less interpret colors by default
 alias less='less -R'
+
+# zsh convention
+alias gst='git status -sb'
+alias ga='git add -A'
+alias gc='git commit -v'
+alias gd='git diff -M'
